@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores:
+    #284A28
+    #122414
+    #7BB360
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to left, #284A28, #122414);
+    position: relative;
+}
+
+main{
+    width: 80vw;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+section#imagem{
+    background-image: url(../imagens/samambaia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 200px;
+}
+
+section#formulario{
+    background-color: black;
+    padding: 20px;
+}
+
+section#formulario > p{
+    text-align: justify;
+}
+
+section#formulario > h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+div#remeber{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+div.campos{
+    border-bottom: 1px solid #7BB360;
+}
+
+div.campos > input{
+    height: 35px;
+    margin-top: 20px;
+    background-color: black;
+    border: none;
+    width: 100%;
+}
+
+div.campos > input::placeholder{
+    color: white;
+}
+
+div.campos > input:focus-within{
+    text-decoration: none;
+}
+
+div#esqueceu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    float: right;
+    width: 50%;
+}
+
+div#esqueceu > button{
+    background-color: black;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: right;
+    width: 100%;
+    font-size: 0.91em;
+}
+
+div#botao-login{
+    text-align: center;
+}
+
+div#botao-login > p{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+div#botao-login > input{
+    cursor: pointer;
+    background-color: #7BB360;
+    border: none;
+    width: 200px;
+    height: 30px;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    border-radius: 20px;
+}
+
+div#opcoes-login{
+    text-align: center;
+}
+
+div#opcoes-login > a > img{
+    width: 20px;
+    border: 2px solid #7BB360;
+    border-radius: 50%;
+    padding: 10px;
+}
