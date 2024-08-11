@@ -22,7 +22,8 @@ body,html{
 }
 
 main{
-    width: 80vw;
+    width: 340px;
+    height: 620px;
     display: block;
     position: absolute;
     top: 50%;
@@ -32,24 +33,25 @@ main{
     overflow: hidden;
 }
 
-section#imagem{
+div#imagem{
+    display: block;
     background-image: url(../imagens/samambaia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left center;
-    height: 200px;
+    height: 180px;
 }
 
-section#formulario{
+div#formulario{
     background-color: black;
     padding: 20px;
 }
 
-section#formulario > p{
+div#formulario > p{
     text-align: justify;
 }
 
-section#formulario > h1{
+div#formulario > h1{
     font-size: 2em;
     margin-bottom: 20px;
 }
